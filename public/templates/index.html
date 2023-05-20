@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Fabien RIBES</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+        <link href="/styles/style.css" rel="stylesheet">
+        <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body class="scrollbar scrollbarHide">
+        <div class="fixed right-10 top-10">
+            <div class="relative inline-flex">
+                <button id="languageSelect" class="flex items-center border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none overflow-hidden">
+                    <div class="w-6 h-4 bg-cover mr-2" id="currentFlag" style="background-image: url('/images/flags/us.svg');"></div>
+                </button>
+                <div id="languageOptions" class="hidden absolute bg-white border border-gray-300 rounded mt-2 top-10 pr-2">
+                    <button class="flex items-center px-4 py-2 hover:bg-gray-200" data-value="us" data-flag="/images/flags/us.svg">
+                        <img class="w-6 h-4 mr-2" src="/images/flags/us.svg" alt="United States flag">
+                        English
+                    </button>
+                    <button class="flex items-center px-4 py-2 hover:bg-gray-200" data-value="fr" data-flag="/images/flags/fr.svg">
+                        <img class="w-6 h-4 mr-2" src="/images/flags/fr.svg" alt="French flag">
+                        Français
+                    </button>
+                    <!-- Ajoutez autant d'options que de langues prises en charge par i18next -->
+                </div>
+            </div>        
+        </div>    
+        <div class="snap-y snap-mandatory h-screen w-full overflow-scroll">
+            <div class="snap-start w-full h-screen flex flex-col items-center justify-center font-manrope">
+                <h1 class="animate-tracking font-manrope text-9xl font-black tracking-widest text-clip overflow-hidden whitespace-nowrap">FABIEN RIBES</h1>
+                <p data-i18n="work" class="text-xl">ÉTUDIANT EN INGÉNIERIE INFORMATIQUE</p>
+                <a href="#test" class="scroll-smooth">Test</a>
+            </div>
+            <div class="snap-start bg-teal-200 w-full h-screen flex items-center justify-center" id="test">
+                2
+            </div>
+        </div>
+    </body>
+</html>
+
+<script src="/scripts/i18next.js"></script>
