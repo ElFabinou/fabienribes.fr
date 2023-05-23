@@ -9,8 +9,13 @@ i18next.init({
                 "age": "21 ans",
                 "school-projet": "Projet scolaire",
                 "database": "Base de données",
+                "database-project": "Agence de voyage",
                 "embeded-system": "Système embarqué",
+                "embeded-system-project": "Station météo",
                 "oop": "Programmation orientée objet",
+                "oop-project": "Logiciel de gestion de commandes",
+                "network": "Réseaux",
+                "network-project": "Funkytown",
             }
         },
         us: {
@@ -20,8 +25,13 @@ i18next.init({
                 "age": "21 y.o.",
                 "school-projet": "School project",
                 "database": "Database",
+                "database-project": "Travel agency",
                 "embeded-system": "Embeded system",
+                "embeded-system-project": "Weather station",
                 "oop": "Object oriented programming",
+                "oop-project": "Order management software",
+                "network": "Networks",
+                "network-project": "Funkytown",
             }
         },
     }
