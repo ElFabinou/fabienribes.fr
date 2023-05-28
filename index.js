@@ -11,6 +11,10 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname+'/public/templates/index.html'));
 })
 
+app.get('/projects/travel-agency', (req, res) => {
+    res.sendFile(path.join(__dirname+'/public/templates/project/travel-agency.html'));
+})
+
 app.listen(port, () => {
     console.log(`Lancement du portfolio sur le port : ${port}`)
 })
