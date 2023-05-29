@@ -7,7 +7,8 @@
     "build-css-watch": "tailwindcss build style.css -o public/styles/style.css --watch",
     "build-css": "tailwindcss build style.css -o public/styles/style.css",
     "server": "nodemon index.js",
-    "dev": "concurrently \"npm run build-css-watch\" \"npm run server\""
+    "dev": "concurrently \"npm run build-css-watch\" \"npm run server\"",
+    "start": "node index.js"
   },
   "author": "Fabien RIBES",
   "license": "ISC",

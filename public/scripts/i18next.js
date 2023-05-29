@@ -22,8 +22,8 @@ i18next.init({
                 "work-project": "Projet professionnel",
                 "internship-project": "Stage de développement",
                 "internship-date": "04 avril 2022 - 29 juillet 2022",
-                "alternance-project": "Alternance",
-                "alternance-date": "Septembre 2022 - Septembre 2025",
+                "work-study-project": "Alternance",
+                "work-study-date": "Septembre 2022 - Septembre 2025",
                 "used-technologies": "Technologies utilisées",
                 "database-project-paragraph": {
                     "paragraph-part1": "En tant que service informatique d'une agence de voyage notre objectif était de concevoir le système de base de données en gérant les services suivants :",
@@ -35,8 +35,38 @@ i18next.init({
                     "list-item6": "Gestion des statistiques",
                     "paragraph-part2": "Nous avons créé un modèle de données conceptuel, puis un modèle de données logique et un modèle de données physiques. Enfin, nous avons créé les arbres algébriques de 3 requêtes et un WBS/OBS de ce livrable.",
                     "paragraph-part3": "Ce projet m'a permis d'accroître mes compétences en SQL ainsi que d'avoir un premier projet informatique au sein de mes études supérieures.",
-                }
-                
+                },
+                "embeded-system-project-paragraph": {
+                    "paragraph-part1":"Dans le cadre de notre projet d'école, nous avons été engagés par l'Agence Internationale de Vigilance Météorologique (IAWV) pour une mission ambitieuse. L'idée était de déployer, au sein des océans, des navires de surveillance équipés de stations météorologiques embarquées. Leur rôle? Pour mesurer les paramètres influençant la formation de cyclones ou d'autres catastrophes naturelles.",
+                    "paragraph-part2":"Nombre de sociétés utilisant des transports navals avaient accepté de doter leurs bateaux de ces stations embarquées. Il était cependant impératif que ces dernières soient simples, efficaces et facilement manœuvrables par un membre de l'équipage. À cet effet, nous devions prévoir une documentation technique utilisateur.",
+                    "paragraph-part3":"La conception du prototype nous avait été confiée par l'un des dirigeants de l'agence, qui avait proposé notre startup, où travaillait son fils ingénieur, pour cette tâche.",
+                    "paragraph-part4":"Pour la conception de notre projet, nommé Worldwide Weather Watcher, nous nous étions d'abord concentrés sur l'analyse des besoins. Notre objectif était de concevoir notre station de manière à répondre à toutes les exigences de l'AIVM. Une fois ce besoin bien défini, nous avions entamé la conception des différents diagrammes Sysml/UML. Ceux-ci expliqueraient le fonctionnement complet de notre station, allant des capteurs au stockage des données, en passant par la sélection de différents modes de fonctionnement.",
+                    "paragraph-part5":"Dans ce cadre, il était prévu que nous travaillions sur arduino, plateforme de prototypage qui nous aiderait à rendre notre projet à la fois pratique et innovant.",
+                },
+                "oop-project-paragraph": {
+                    "paragraph-part1":"Delivery Manager est une application de gestion de base de données pour une nouvelle entreprise (fictive). Cette dernière nous a contacté afin de concrétiser l'application, pour permettre à leurs employés de manipuler facilement les données de leurs clients, commandes...",
+                    "paragraph-part2":"L'application Delivery Manager a été conçu grâce aux langages C++ (pour la partie interface graphique) et SQL (pour les requêtes de base de données). Pour ce faire, nous avons utilisé l'IDE Visual Studio 2019 de Microsoft, le logiciel Microsoft SQL Server Management Studio 18 pour créer la BDD ainsi qu'un hébergement de BDD grâce à Microsoft Azure.",
+                },
+                "network-project-paragraph": {
+                    "paragraph-part1":"Dans le cadre de notre projet de réseau, nous avons été engagés par la société Funkytown pour une mission ambitieuse. L'idée était de déployer, au sein de leur entreprise, un réseau informatique. Leur rôle? Pour permettre aux employés de communiquer entre eux, de partager des fichiers et d'accéder à internet.",
+                },
+                "web-project-paragraph": {
+                    "paragraph-part1":"Dans le cadre de notre projet de développement web, nous avons été engagés par la société Vite Mon Stage pour une mission ambitieuse. L'idée était de déployer, au sein de leur entreprise, un site web. Leur rôle? Pour permettre aux étudiants de trouver un stage plus facilement.",
+                    "paragraph-part2":"Aujourd'hui, les étudiants effectuent leurs recherches de stage en entreprise en activant leurs réseaux personnels et professionnels (LinkedIn, anciennes promotions, etc.), en postulant à des offres.",
+                    "paragraph-part3":"Afin de rendre cette étape de recherche de stage plus facile et pratique, il serait nécessaire de disposer d'un site web qui regroupe différentes offres de stage et qui permettra de stocker les données des entreprises ayant déjà pris un stagiaire, ou qui en recherchent un.",
+                    "paragraph-part4":"Nous sommes chargés de développer ce site web en répondant aux multiples critères demandés dans le cahier des charges.",
+                },
+                "internship-project-paragraph": {
+                    "learn-more": "En savoir plus à propos de Qstomize",
+                    "paragraph-part1":"Lors de ce stage, j'ai été chargé de développer une application permettant de dématérialiser des documents utilisés par les salariés lorsqu'ils opèrent sur des véhicules. En plus d'avoir pour but d'être intuitive et facilement utilisable par les opérateurs, cette application permettra une économie de papier et, par conséquent, de coûts (archivage, achat de papier, etc.).",
+                },
+                "work-study-project-paragraph": {
+                    "learn-more": "En savoir plus à propos d'Enedis",
+                    "paragraph-part1":"Je suis actuellement en alternance chez Enedis, une entreprise clé dans le paysage énergétique français. Enedis, filiale à part entière d'EDF, se distingue par sa gestion dynamique et efficace de la distribution d'électricité sur le territoire. Il est important de noter que le fait d'appartenir au groupe EDF, l'un des acteurs majeurs de l'énergie non seulement en France, mais aussi sur la scène internationale.",
+                    "paragraph-part2":"Dans ce cadre, mes responsabilités sont principalement axées sur le développement de divers outils stratégiques en matière de ressources humaines. Le premier outil que je développe est destiné aux Forces d'Intervention Rapide d'Électricité (FIRE). Les FIRE sont des équipes spécialisées qui interviennent lors de situations d'urgence liées au réseau électrique, comme des coupures de courant importantes ou des dégâts sur le réseau suite à des catastrophes naturelles. Cet outil permet une gestion RH optimisée de ces équipes, en facilitant par exemple la planification de leurs interventions, la gestion de leurs compétences et de leur formation.",
+                    "paragraph-part3":"En plus de cela, je travaille également sur un autre outil destiné aux cadres de l'entreprise. Cet outil a pour objectif de leur permettre d'exprimer leurs souhaits et aspirations professionnelles. En fournissant un canal direct pour communiquer ces informations, l'outil aide à optimiser le processus de gestion des talents, ce qui profite à la fois à l'individu et à l'entreprise dans son ensemble.",
+                    "paragraph-part4":"Ces projets mettent en lumière non seulement mes compétences techniques, mais aussi ma capacité à comprendre et à répondre aux besoins spécifiques de l'entreprise en matière de gestion des ressources humaines.",
+                },
             }
         },
         us: {
@@ -54,12 +84,12 @@ i18next.init({
                 "oop-project": "Order management software",
                 "network": "Networks",
                 "network-project": "Funkytown",
-                "web-project": "Vite Mon Stage",
+                "web-project": "Vite Mon Stage (Hurry! My Internship)",
                 "work-project": "Work project",
                 "internship-project": "Development internship",
                 "internship-date": "April 4th 2022 - July 29th 2022",
-                "alternance-project": "Work-study project",
-                "alternance-date": "September 2022 - Septembre 2025",
+                "work-study-project": "Work-study project",
+                "work-study-date": "September 2022 - Septembre 2025",
                 "used-technologies": "Used technologies",
                 "database-project-paragraph": {
                     "paragraph-part1": "As the IT department of a travel agency our objective was to design the database system by managing the following services:",
@@ -71,6 +101,37 @@ i18next.init({
                     "list-item6": "Statistics management",
                     "paragraph-part2": "We created a conceptual data model, then a logical data model and a physical data model. Finally, we created the algebraic trees of 3 queries and a WBS/OBS of this deliverable.",
                     "paragraph-part3": "This project allowed me to increase my skills in SQL as well as to have a first IT project within my higher education.",
+                },
+                "embeded-system-project-paragraph": {
+                    "paragraph-part1":"As part of our school project, we were engaged by the International Agency for Weather Vigilance (IAWV) for an ambitious mission. The idea was to deploy, within the oceans, surveillance ships equipped with onboard weather stations. Their role? To measure the parameters influencing the formation of cyclones or other natural disasters.",
+                    "paragraph-part2":"A number of companies using naval transport had agreed to equip their boats with these onboard stations. However, it was imperative that these be simple, efficient, and easily operable by a crew member. To this end, we were to provide a user technical manual.",
+                    "paragraph-part3":"The prototype design had been entrusted to us by one of the agency's leaders, who had proposed our startup, where his engineer son worked, for this task.",
+                    "paragraph-part4":"For the design of our project, named Worldwide Weather Watcher, we first focused on the needs analysis. Our goal was to design our station in such a way as to meet all the requirements of the IAWV. Once this need was well defined, we had started designing various Sysml/UML diagrams. These would explain the complete operation of our station, from the sensors to the data storage, through the selection of different operating modes.",
+                    "paragraph-part5":"In this context, it was planned that we would work on Arduino, a prototyping platform that would help us make our project both practical and innovative.",
+                },
+                "oop-project-paragraph": {
+                    "paragraph-part1":"Delivery Manager is a database management application for a new company (fictional). This company contacted us to develop the application, to enable their employees to easily manipulate their customer data, orders...",
+                    "paragraph-part2":"The Delivery Manager application was designed using C++ (for the graphical interface) and SQL (for database queries). To achieve this, we used Microsoft's Visual Studio 2019 IDE, Microsoft SQL Server Management Studio 18 software to create the DB, and DB hosting via Microsoft Azure.",
+                },
+                "network-project-paragraph": {
+                    "paragraph-part1":"As part of our network project, we were hired by Funkytown to carry out an ambitious mission. The idea was to deploy, within their company, a computer network. Their role? To enable employees to communicate with each other, share files and access the Internet.",
+                },
+                "web-project-paragraph": {
+                    "paragraph-part1":"As part of our web development project, we were engaged by the company 'Quickly My Internship' for an ambitious mission. The idea was to deploy a website within their company. Their role? To enable students to find internships more easily.",
+                    "paragraph-part2":"Today, students conduct their searches for internships in companies by activating their personal and professional networks (LinkedIn, former cohorts, etc.), and by applying to offers.",
+                    "paragraph-part3":"To make this internship search stage easier and more convenient, it would be necessary to have a website that brings together different internship offers and allows storing the data of companies that have already taken an intern, or are looking for one.",
+                    "paragraph-part4":"We are tasked with developing this website while meeting the multiple criteria required in the specifications.",
+                },
+                "internship-project-paragraph": {
+                    "learn-more": "Learn more about Qstomize",
+                    "paragraph-part1":"During this intership, I was tasked with developing an application to dematerialise the documents used by employees when operating vehicles. As well as being intuitive and easy for operators to use, this application will save paper and, consequently, costs (archiving, paper purchases, etc.).",
+                },
+                "work-study-project-paragraph": {
+                    "learn-more": "Learn more about Enedis",
+                    "paragraph-part1":"I am currently in a work-study program at Enedis, a key company in the French energy landscape. Enedis, a fully-owned subsidiary of EDF, stands out for its dynamic and efficient management of electricity distribution across the territory. It is important to note that being part of the EDF group, one of the major players in energy not only in France, but also on the international stage.",
+                    "paragraph-part2":"In this context, my responsibilities are mainly focused on the development of various strategic tools in the field of human resources. The first tool I am developing is intended for the Rapid Electricity Intervention Forces (FIRE). The FIRE teams are specialized groups that intervene in emergency situations related to the electricity network, such as significant power outages or damage to the network following natural disasters. This tool enables optimized HR management of these teams, facilitating, for instance, the planning of their interventions, management of their skills, and their training.",
+                    "paragraph-part3":"In addition to this, I am also working on another tool aimed at the company's executives. This tool's goal is to enable them to express their professional wishes and aspirations. By providing a direct channel to communicate this information, the tool aids in optimizing the talent management process, benefiting both the individual and the company as a whole.",
+                    "paragraph-part4":"These projects highlight not only my technical skills, but also my ability to understand and respond to the company's specific needs in terms of human resources management.",
                 },
             }
         },
