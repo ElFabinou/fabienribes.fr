@@ -3,6 +3,8 @@ const app = express()
 const port = process.env.PORT || 3000
 const path = require('path');
 const favicon = require('serve-favicon');
+const cron = require('node-cron');
+const axios = require('axios');
 
 app.use(favicon(path.join(__dirname, 'public', '/images/favicon/favicon.ico')));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -42,3 +44,8 @@ app.get('/projects/enedis', (req, res) => {
 app.listen(port, () => {
     console.log(`Lancement du portfolio sur le port : ${port}`)
 })
+cron.schedule('*/5 * * * *', () => {
+    axios.get('https://fabienribes.com')
+      .then(response => console.log('Pinged successfully'))
+      .catch(error => console.error('Error pinging', error));
+  });
