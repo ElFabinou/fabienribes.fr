@@ -5,6 +5,9 @@ i18next.init({
         fr: {
             translation: {
                 "go-back": "Retour",
+                "about-me-encart": "À propos de moi",
+                "projects-encart": "Projets",
+                "about-me": "Depuis plus jeune, je suis passionné par l'informatique. J'apprécie ce domaine qui pousse à la réflexion. C'est pour cette raison que j'ai rejoint le cursus informatique de l'école d’ingénieurs du CESI. Je suis aujourd'hui en recherche d’un stage à l'étranger, pour étendre mes connaissances et dévouvrir de nouveaux horizons.",
                 "work": "ÉTUDIANT EN INGENIERIE INFORMATIQUE",
                 "select-language": "Langue",
                 "age": "21 ans",
@@ -17,6 +20,14 @@ i18next.init({
                 "oop-project": "Logiciel de gestion de commandes",
                 "network": "Réseaux",
                 "network-project": "Funkytown",
+                "sysadmin": "Administration système",
+                "sysadmin-project": "ABSTERGO",
+                "sysprog": "Programmation système",
+                "sysprog-project": "EasySave",
+                "bigdata": "Big data",
+                "bigdata-project": "Analyse de données",
+                "algorithmics": "Algorithmique",
+                "algorithmics-project": "Optimisation de livraison",
                 "web": "Développement web",
                 "web-project": "Vite Mon Stage",
                 "work-project": "Projet professionnel",
@@ -67,11 +78,56 @@ i18next.init({
                     "paragraph-part3":"En plus de cela, je travaille également sur un autre outil destiné aux cadres de l'entreprise. Cet outil a pour objectif de leur permettre d'exprimer leurs souhaits et aspirations professionnelles. En fournissant un canal direct pour communiquer ces informations, l'outil aide à optimiser le processus de gestion des talents, ce qui profite à la fois à l'individu et à l'entreprise dans son ensemble.",
                     "paragraph-part4":"Ces projets mettent en lumière non seulement mes compétences techniques, mais aussi ma capacité à comprendre et à répondre aux besoins spécifiques de l'entreprise en matière de gestion des ressources humaines.",
                 },
+                "sysadmin-project-paragraph": {
+                    "paragraph-part1":"En tant qu'administrateurs système, nous sommes chargés de gérer les serveurs de l'entreprise Abstergo afin de garantir leur bon fonctionnement. Pour ce faire, nous devons effectuer des tâches de maintenance, de configuration et de surveillance des serveurs.",
+                },
+                "sysprog-project-paragraph": {
+                    "paragraph-part1":"Nous avons récemment intégré la société d'édition de logiciels ProSoft, une étape importante dans notre parcours professionnel. Relevant directement du Directeur des Systèmes d'Information (DSI), nous avons eu la chance d'assumer la responsabilité d'un projet significatif, \"EasySave\".",
+                    "paragraph-part2":"Le projet \"EasySave\" était centré sur le développement d'un logiciel de sauvegarde. L'objectif principal de ce logiciel était de sauvegarder les données de manière différentielle ou complète, en fonction des besoins de l'utilisateur. Cela a signifié que nous avons dû travailler sur une solution capable de sauvegarder uniquement les éléments qui avaient changé depuis la dernière sauvegarde complète, permettant ainsi de gagner du temps et de l'espace de stockage, ou bien de réaliser une sauvegarde intégrale, si nécessaire.",
+                    "paragraph-part3":"Un défi clé a été l'exploitation du multithreading pour optimiser l'efficacité et la vitesse du logiciel. Nous avons utilisé le langage C# pour développer ces fonctionnalités multithread, afin d'assurer que notre logiciel puisse effectuer plusieurs opérations en même temps. En permettant au logiciel d'effectuer des tâches simultanément, nous avons réussi à augmenter significativement la performance et la rapidité du processus de sauvegarde.",
+                },
+                "sysprog-project-paragraph": {
+                    "paragraph-part1":"",
+                    "paragraph-part2":"",
+                    "paragraph-part3":"",
+                },
+                "school": "Parcours scolaire",
+                "lycee": "Lycée",
+                "lycee-description": "Bac mention bien avec mention européenne",
+                "stage":"Stage à Qstomize",
+                "stage-description":"Voir plus dans la section suivante",
+                "alternance":"Alternance à Enedis",
+                "alternance-description":"Voir plus dans la section suivante",
+                "qualities" : {
+                    "title": "Qualités",
+                    "rigueur": "Rigueur",
+                    "rigueur-description": "J'aime que les choses soient bien faites.",
+                    "travail-dequipe": "Travail d'équipe",
+                    "travail-dequipe-description": "Travailler en équipe de partager les connaissances et de s'entraider.",
+                    "autonomie": "Autonomie",
+                    "autonomie-description": "Je suis capable de travailler de manière autonome.",
+                    "motivation": "Motivation",
+                    "motivation-description": "J'aime affronter des problème et les résoudre.",
+                },
+                "hobbies": {
+                    "title": "Loisirs",
+                    "informatique": "Informatique",
+                    "velo": "Vélo",
+                    "voyage": "Voyage (Allemagne, Canada, États-Unis, etc.)",
+                },
+                "language":{
+                    "title": "Langues",
+                    "francais": "Français (natif)",
+                    "anglais": "Anglais",
+                }
             }
         },
         us: {
             translation: {
                 "go-back": "Back",
+                "about-me-encart": "About me",
+                "projects-encart": "Projects",
+                "about-me": "Ever since I was young, I've had a passion for computing. It's a field that encourages me to think. That's why I joined the IT course at the CESI engineering school. I'm now looking for a work placement abroad, to broaden my knowledge and discover new horizons.",
                 "work": "COMPUTER ENGENEERING STUDENT",
                 "select-language": "Language",
                 "age": "21 y.o.",
@@ -84,6 +140,14 @@ i18next.init({
                 "oop-project": "Order management software",
                 "network": "Networks",
                 "network-project": "Funkytown",
+                "sysadmin": "System administrator",
+                "sysadmin-project": "ABSTERGO",
+                "sysprog": "System programming",
+                "sysprog-project": "EasySave",
+                "bigdata": "Big data",
+                "bigdata-project": "Data analysis",
+                "algorithmics": "Algorithmics",
+                "algorithmics-project": "Delivery optimization",
                 "web-project": "Vite Mon Stage (Hurry! My Internship)",
                 "work-project": "Work project",
                 "internship-project": "Development internship",
@@ -133,6 +197,44 @@ i18next.init({
                     "paragraph-part3":"In addition to this, I am also working on another tool aimed at the company's executives. This tool's goal is to enable them to express their professional wishes and aspirations. By providing a direct channel to communicate this information, the tool aids in optimizing the talent management process, benefiting both the individual and the company as a whole.",
                     "paragraph-part4":"These projects highlight not only my technical skills, but also my ability to understand and respond to the company's specific needs in terms of human resources management.",
                 },
+                "sysadmin-project-paragraph": {
+                    "paragraph-part1":"As system administrators, we are responsible for managing Abstergo's servers to ensure they run smoothly. This involves maintenance, configuration and monitoring of the servers.",
+                },
+                "sysprog-project-paragraph": {
+                    "paragraph-part1":"We recently joined ProSoft, a software editing company, marking a significant milestone in our professional journey. Reporting directly to the Director of Information Systems (DSI), we had the opportunity to take on the responsibility for a significant project, \"EasySave\".",
+                    "paragraph-part2":"The \"EasySave\" project focused on developing a backup software. The main goal of this software was to save data in a differential or complete manner, depending on user needs. This meant that we had to work on a solution capable of saving only the elements that had changed since the last complete backup, thus saving time and storage space, or to carry out a full backup if necessary.",
+                    "paragraph-part3":"A key challenge was to use multithreading to optimize the efficiency and speed of the software. We used the C# language to develop these multithreaded features, to ensure that our software could perform multiple operations at the same time. By allowing the software to perform tasks simultaneously, we were able to significantly increase the performance and speed of the backup process.",
+                },
+                "school": "Educational background",
+                "lycee":"High school",
+                "lycee-description":"A-levels with European honours (more english classes)",
+                "stage":"Internship at Qstomize",
+                "stage-description":"See more in next section",
+                "alternance":"Work-study at Enedis",
+                "alternance-description":"See more in next section",
+                "qualities": {
+                    "title": "Qualities",
+                    "rigueur": "Rigor",
+                    "rigueur-description": "I like when things are done correctly.",
+                    "travail-dequipe": "Teamwork",
+                    "travail-dequipe-description": "Working in team facilitates knowledge sharing and mutual assistance.",
+                    "autonomie": "Autonomy",
+                    "autonomie-description": "I am capable of working autonomously.",
+                    "motivation": "Motivation",
+                    "motivation-description": "I enjoy tackling problems and finding solutions."
+                },
+                "hobbies": {
+                    "title": "Hobbies",
+                    "informatique": "Computer Science",
+                    "velo": "Biking",
+                    "voyage": "Traveling (Germany, Canada, United States, etc.)"
+                },
+                "language":{
+                    "title": "Languages",
+                    "francais": "French (native)",
+                    "anglais": "English",
+                }
+                
             }
         },
     }

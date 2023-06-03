@@ -41,6 +41,22 @@ app.get('/projects/enedis', (req, res) => {
     res.sendFile(path.join(__dirname+'/public/templates/project/enedis.html'));
 })
 
+app.get('/projects/system-administrator', (req, res) => {
+    res.sendFile(path.join(__dirname+'/public/templates/project/system-administrator.html'));
+})
+
+app.get('/projects/system-programming', (req, res) => {
+    res.sendFile(path.join(__dirname+'/public/templates/project/system-programming.html'));
+})
+
+app.get('/projects/big-data', (req, res) => {
+    res.sendFile(path.join(__dirname+'/public/templates/project/big-data.html'));
+})
+
+app.get('/projects/algorithmics', (req, res) => {
+    res.sendFile(path.join(__dirname+'/public/templates/project/algorithmics.html'));
+})
+
 app.listen(port, () => {
     console.log(`Lancement du portfolio sur le port : ${port}`)
 })

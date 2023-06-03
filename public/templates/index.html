@@ -1,140 +1,346 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - Fabien RIBES</title>
-        <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
-        <link href="/styles/style.css" rel="stylesheet">
-        <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="snap-y snap-mandatory h-screen w-full overflow-scroll">
-            <div class="lg:snap-start relative h-screen flex flex-col items-center justify-center font-manrope">
-                <div class="absolute top-0 right-0 m-4">
-                    <div class="flex justify-end mt-4 mr-4">
-                        <div class="relative">
-                            <button id="dropdownButton" class="text-black border-solid border-2 border-gray-300 rounded-full font-medium text-sm px-4 py-2.5 text-center inline-flex items-center">
-                                <img src="/images/flags/us.svg" id="currentFlag" width="20px" class="mr-2">
-                                <span data-i18n="select-language"></span>
-                            </button>
-                            <!-- Dropdown menu -->
-                            <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow absolute right-0" id="dropdown">
-                                <ul class="py-1" aria-labelledby="dropdown">
-                                    <li>
-                                        <a class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 flex" data-value="us">
-                                            <img src="/images/flags/us.svg" id="currentFlag" width="20px" class="mr-2 rounded"> English
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 flex" data-value="fr">
-                                            <img src="/images/flags/fr.svg" id="currentFlag" width="20px" class="mr-2 rounded"> Français
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Fabien RIBES</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon.ico">
+    <link href="/styles/style.css" rel="stylesheet">
+    <link href="/styles/divsnapscrolltitle.css" rel="stylesheet">
+    <link href="/styles/blockquote.css" rel="stylesheet">
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="snap-y snap-mandatory h-screen w-full overflow-scroll">
+        <div class="lg:snap-start relative h-screen flex flex-col items-center justify-center font-manrope">
+            <div class="absolute top-0 right-0 m-4">
+                <div class="flex justify-end mt-4 mr-4">
+                    <div class="relative">
+                        <button id="dropdownButton"
+                            class="text-black border-solid border-2 border-gray-300 rounded-full font-medium text-sm px-4 py-2.5 text-center inline-flex items-center">
+                            <img src="/images/flags/us.svg" id="currentFlag" width="20px" class="mr-2">
+                            <span data-i18n="select-language"></span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow absolute right-0"
+                            id="dropdown">
+                            <ul class="py-1" aria-labelledby="dropdown">
+                                <li>
+                                    <a class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 flex"
+                                        data-value="us">
+                                        <img src="/images/flags/us.svg" id="currentFlag" width="20px"
+                                            class="mr-2 rounded"> English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2 flex"
+                                        data-value="fr">
+                                        <img src="/images/flags/fr.svg" id="currentFlag" width="20px"
+                                            class="mr-2 rounded"> Français
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div></div>
-                <div class="text-center">
-                    <h1 class="animate-tracking font-manrope text-7xl lg:text-9xl font-black tracking-widest">FABIEN RIBES</h1>
-                    <p data-i18n="work" class="text-xl">ÉTUDIANT EN INGÉNIERIE INFORMATIQUE</p>
+            </div>
+            <div></div>
+            <div class="text-center">
+                <h1 class="animate-tracking font-manrope text-7xl lg:text-9xl font-black tracking-widest">FABIEN RIBES
+                </h1>
+                <p data-i18n="work" class="text-xl">ÉTUDIANT EN INGÉNIERIE INFORMATIQUE</p>
+            </div>
+            <div class="flex justify-between">
+                <div class="flex items-center">
+                    <img src="/images/icons/cake.svg" width="20px" class="m-1">
+                    <p class="text-xl" title="13/02/2002" data-i18n="age">21 ans</p>
                 </div>
-                <div class="flex justify-between">
-                    <div class="flex items-center">
-                        <img src="/images/icons/cake.svg" width="20px" class="m-1">
-                        <p class="text-xl" title="13/02/2002" data-i18n="age">21 ans</p>
-                    </div>
-                    <div class="flex items-center ml-10">
-                        <img src="/images/icons/pin.svg" width="20px" class="m-1">
-                        <p class="text-xl" title="Saint-Étienne-du-Rouvray">Rouen, France</p>
-                    </div>
-                </div>
-                <div class="absolute bottom-0 mb-8">
-                    <div class="w-8 h-16 border-2 border-gray-700 rounded-full relative">
-                        <div class="w-2 h-2 bg-gray-700 rounded-full absolute top-4 left-1/2 transform -translate-x-1/2 opacity-100 animate-mouse"></div>
-                    </div>
+                <div class="flex items-center ml-10">
+                    <img src="/images/icons/pin.svg" width="20px" class="m-1">
+                    <p class="text-xl" title="Saint-Étienne-du-Rouvray">Rouen, France</p>
                 </div>
             </div>
-            <div class="lg:snap-start" id="projects">
-                <div class="w-full min-h-screen grid grid-cols-1 space-x-1 py-5 px-5">
-                    <div class="h-screen lg:h-full md:h-full sm:h-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-cols-max">
-                        <a href="./projects/travel-agency" class="h-full flex-grow w-full max-w-full relative bg-center bg-contain bg-cover transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200" 
-                            style="background-image: url('/images/vignettes/database.png')">
-                            <div class="w-full h-full bg-sky-500/90 flex items-center flex-col justify-between">
-                                <span class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);" class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
-                                <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center" data-i18n="database-project">Base de données</h1>
-                                <p class="text-white text-xl font-bold text-center font-light">2021</p>
-                            </div>
-                        </a>
-                        <a href="./projects/weather-station" class="flex-grow w-full max-w-full relative bg-center bg-cover transition ease-in-out bg-orange-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200" 
-                            style="background-image: url('/images/vignettes/arduino.png')">
-                            <div class="w-full h-full bg-orange-500/90 flex items-center justify-center flex-col justify-between">
-                                <span class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);" class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
-                                <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center" data-i18n="embeded-system-project">Station météo</h1>
-                                <p class="text-white text-xl font-bold text-center font-light">2021</p>
-                            </div>
-                        </a>
-                        <a href="./projects/order-management-software" class="flex-grow w-full max-w-full relative bg-center bg-cover transition ease-in-out bg-orange-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200 bg-left" 
-                            style="background-image: url('/images/vignettes/cpp.png')">
-                            <div class="content-between w-full h-full bg-green-500/70 flex items-center justify-center flex-col justify-between">
-                                <span class="mb-2 py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);" class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
-                                <h1 class="text-white text-3xl font-bold text-center font-black h-12 flex items-center justify-center" data-i18n="oop-project">Logiciel de gestion de commandes</h1>
-                                <p class="text-white text-xl font-bold text-center font-light">2021</p>
-                            </div>
-                        </a>
-                        <a href="./projects/funkytown" class="flex-grow w-full max-w-full relative bg-center bg-cover transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200 bg-left" 
-                            style="background-image: url('/images/vignettes/reseau.png')">
-                            <div class="w-full h-full bg-indigo-500/70 flex items-center justify-center flex-col justify-between">
-                                <span class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);" class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
-                                <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center" data-i18n="network-project">Funkytown</h1>
-                                <p class="text-white text-xl font-bold text-center font-light">2022</p>
-                            </div>
-                        </a>
-                        <a href="./projects/vms" class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200" 
-                            style="background-image: url('/images/vignettes/web.png')">
-                            <div class="w-full h-full bg-pink-500/90 flex items-center justify-center flex-col justify-between">
-                                <span class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);" class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
-                                <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center" data-i18n="web-project">Vite Mon Stage</h1>
-                                <p class="text-white text-xl font-bold text-center font-light">2022</p>
-                            </div>
-                        </a>
-                        <a href="./projects/qstomize" class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200" 
-                            style="background-image: url('/images/vignettes/qstomize.png')">
-                            <div class="w-full h-full bg-teal-500/90 flex items-center justify-center flex-col justify-between">
-                                <span class="py-2 px-4 shadow-md no-underline rounded-full bg-green-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img src="/images/icons/work.svg" width="20px" style="filter: brightness(0) invert(1);" class="me-2"> <span data-i18n="work-project">Projet Professionnel</span></span>
-                                <h1 class="text-white text-3xl font-bold text-center font-black h-12 flex items-center justify-center" data-i18n="internship-project">Stage de fin d'année</h1>
-                                <p class="text-white text-xl font-bold text-center font-light" data-i18n="internship-date">04 avril 2022 - 29 juillet 2022</p>
-                            </div>
-                        </a>
-                        <a href="./projects/enedis" class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200" 
-                            style="background-image: url('/images/vignettes/enedis.png')">
-                            <div class="w-full h-full bg-lime-500/90 flex flex-col items-center justify-between">
-                                <span class="py-2 px-4 shadow-md no-underline rounded-full bg-green-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5">
-                                    <img src="/images/icons/work.svg" width="20px" style="filter: brightness(0) invert(1);" class="me-2"> 
-                                    <span data-i18n="work-project">Projet Professionnel</span>
-                                </span>
-                                <div class="flex items-center">
-                                    <span class="relative flex h-3 w-3 items-center justify-center me-1">
-                                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                                        <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-                                    </span>
-                                    <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center" data-i18n="work-study-project">Alternance</h1>
-                                </div>
-                                <div class="flex flex-col items-center">
-                                    <p class="text-white text-xl font-bold text-center font-light" data-i18n="work-study-date">05 septembre 2022 - 1er september 2025</p>
-                                </div>                        
-                            </div>
-                        </a>
-                        <div class="pb-2"></div>
+            <div class="absolute bottom-0 mb-8">
+                <div class="w-8 h-16 border-2 border-gray-700 rounded-full relative">
+                    <div
+                        class="w-2 h-2 bg-gray-700 rounded-full absolute top-4 left-1/2 transform -translate-x-1/2 opacity-100 animate-mouse">
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+        <div class="lg:snap-start h-screen grid grid-rows-3 overflow-auto" id="about-me">
+            <div id="about-meTitle"
+                class="hidden z-10 absolute top-0 left-0 w-full flex justify-center items-start py-3">
+                <span class="bg-white border-2 border-black text-black py-1 px-3 rounded text-xl" data-i18n="about-me-encart">À propos de moi</span>
+            </div>
+            <header class="row-span-1 overflow-auto px-5 py-5">
+                <blockquote class="q-card q-card-color-1">
+                    <div class="content" data-i18n="about-me">Depuis plus jeune, je suis passionné par l'informatique.
+                        J'apprécie ce domaine qui pousse à la réflexion. C'est pour cette raison que j'ai rejoint le
+                        cursus
+                        informatique de l'école d’ingénieurs du CESI. Je suis aujourd'hui en recherche d’un stage à
+                        l'étranger, pour étendre mes connaissances et découvrir de nouveaux horizons.</div>
+                    <div class='author'>Fabien RIBES</div>
+                </blockquote>
+            </header>
+            <div class="row-span-2 grid md:grid-cols-3 gap-4 p-4">
+                <!-- Card for Parcours scolaire -->
+                <div class="p-6 bg-white rounded-lg shadow md:col-span-3">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-semibold text-gray-900" data-i18n="school">Parcours scolaire</h2>
+                    </div>
+                    <div class="mt-4">
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong data-i18n="lycee">Lycée des Fontenelles :</strong> <span
+                                    data-i18n="lycee-description">Bac mention bien avec mention européenne.</span></li>
+                            <li><a href="./#projects"><strong data-i18n="stage">Stage à Qstomize :</strong> <span
+                                        data-i18n="stage-description">Détails de votre expérience et compétences
+                                        acquises...</span></a></li>
+                            <li><a href="./#projects"><strong data-i18n="alternance">Alternance à ENedis :</strong>
+                                    <span data-i18n="alternance-description">Détails de votre expérience et compétences
+                                        acquises...</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card for Qualités -->
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-semibold text-gray-900" data-i18n="qualities.title">Qualités</h2>
+                    </div>
+                    <div class="mt-4">
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong><span data-i18n="qualities.rigueur">Rigueur</span></strong> <span
+                                    data-i18n="qualities.rigueur-description"></span></li>
+                            <li><strong><span data-i18n="qualities.travail-dequipe">Travail d'équipe</span></strong>
+                                <span data-i18n="qualities.travail-dequipe-description"></span></li>
+                            <li><strong><span data-i18n="qualities.motivation">Motivation</span></strong> <span
+                                    data-i18n="qualities.motivation-description"></span></li>
+                            <li><strong><span data-i18n="qualities.autonomie">Autonomie</span></strong> <span
+                                    data-i18n="qualities.autonomie-description"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card for Atouts -->
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-semibold text-gray-900" data-i18n="hobbies.title">Loisirs</h2>
+                    </div>
+                    <div class="mt-4">
+                        <ul class="space-y-2 text-gray-700">
+                            <li><strong><span data-i18n="hobbies.informatique">Informatique</span></strong></li>
+                            <li><strong><span data-i18n="hobbies.velo">Vélo</span></strong></li>
+                            <li><strong><span data-i18n="hobbies.voyage">Voyage</span></strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Card for Langues parlées -->
+                <div class="p-6 bg-white rounded-lg shadow">
+                    <div class="text-center">
+                        <h2 class="text-2xl font-semibold text-gray-900" data-i18n="language.title">Langue</h2>
+                    </div>
+                    <div class="mt-4 flex justify-around">
+                        <div class="text-center flex flex-col items-center">
+                            <strong>
+                                <p class="mt-2 text-gray-700 mb-3" data-i18n="language.francais">Français (natif)</p>
+                            </strong>
+                            <img src="/images/flags/fr.svg" id="currentFlag" width="60px" class="rounded">
+                        </div>
+                        <div class="text-center flex flex-col items-center">
+                            <strong>
+                                <p class="mt-2 text-gray-700 mb-3" data-i18n="language.anglais">Anglais</p>
+                            </strong>
+                            <img src="/images/flags/us.svg" width="60px" class="rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:snap-start min-w-min" id="projects">
+            <div id="projectsTitle"
+                class="hidden z-10 absolute top-0 left-0 w-full flex justify-center items-start py-3">
+                <span class="bg-white border-2 border-black text-black py-1 px-3 rounded text-xl" data-i18n="projects-encart">Mes projets</span>
+            </div>
+            <div class="w-full min-h-screen grid grid-cols-1 space-x-1 py-5 px-5">
+                <div
+                    class="h-screen lg:h-full md:h-full sm:h-full grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 auto-cols-max">
+                    <a href="./projects/travel-agency"
+                        class="h-full flex-grow w-full max-w-full relative bg-center bg-contain bg-cover transition ease-in-out bg-blue-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/database.png')">
+                        <div class="w-full h-full bg-sky-500/90 flex items-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="database-project">Base de données</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2021</p>
+                        </div>
+                    </a>
+                    <a href="./projects/weather-station"
+                        class="flex-grow w-full max-w-full relative bg-center bg-cover transition ease-in-out bg-orange-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/arduino.png')">
+                        <div
+                            class="w-full h-full bg-orange-500/90 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="embeded-system-project">Station météo</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2021</p>
+                        </div>
+                    </a>
+                    <a href="./projects/order-management-software"
+                        class="flex-grow w-full max-w-full relative bg-center bg-cover transition ease-in-out bg-orange-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200 bg-left"
+                        style="background-image: url('/images/vignettes/cpp.png')">
+                        <div
+                            class="content-between w-full h-full bg-green-500/70 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="mb-2 py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black h-12 flex items-center justify-center"
+                                data-i18n="oop-project">Logiciel de gestion de commandes</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2021</p>
+                        </div>
+                    </a>
+                    <a href="./projects/funkytown"
+                        class="flex-grow w-full max-w-full relative bg-center bg-cover transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200 bg-left"
+                        style="background-image: url('/images/vignettes/reseau.png')">
+                        <div
+                            class="w-full h-full bg-indigo-500/70 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="network-project">Funkytown</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2022</p>
+                        </div>
+                    </a>
+                    <a href="./projects/vms"
+                        class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/web.png')">
+                        <div
+                            class="w-full h-full bg-pink-500/90 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="web-project">Vite Mon Stage</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2022</p>
+                        </div>
+                    </a>
+                    <a href="./projects/qstomize"
+                        class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/qstomize.png')">
+                        <div
+                            class="w-full h-full bg-teal-500/90 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-green-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/work.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="work-project">Projet Professionnel</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black h-12 flex items-center justify-center"
+                                data-i18n="internship-project">Stage de fin d'année</h1>
+                            <p class="text-white text-xl font-bold text-center font-light" data-i18n="internship-date">
+                                04 avril 2022 - 29 juillet 2022</p>
+                        </div>
+                    </a>
+                    <a href="./projects/enedis"
+                        class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/enedis.png')">
+                        <div class="w-full h-full bg-lime-500/90 flex flex-col items-center justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-green-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5">
+                                <img src="/images/icons/work.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2">
+                                <span data-i18n="work-project">Projet Professionnel</span>
+                            </span>
+                            <div class="flex items-center">
+                                <span class="relative flex h-3 w-3 items-center justify-center me-1">
+                                    <span
+                                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                                </span>
+                                <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                    data-i18n="work-study-project">Alternance</h1>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <p class="text-white text-xl font-bold text-center font-light"
+                                    data-i18n="work-study-date">05 septembre 2022 - 1er september 2025</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./projects/system-administrator"
+                        class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/adminsys.png')">
+                        <div
+                            class="w-full h-full bg-yellow-500/90 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-emerald-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="sysadmin-project">Vite Mon Stage</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2022</p>
+                        </div>
+                    </a>
+                    <a href="./projects/system-programming"
+                        class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/sysprog.png')">
+                        <div
+                            class="w-full h-full bg-fuchsia-500/90 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="sysprog-project">Vite Mon Stage</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2022</p>
+                        </div>
+                    </a>
+                    <a href="./projects/big-data"
+                        class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/bigdata.png')">
+                        <div
+                            class="w-full h-full bg-lime-500/90 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="bigdata-project">Vite Mon Stage</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2022</p>
+                        </div>
+                    </a>
+                    <a href="./projects/algorithmics"
+                        class="flex-grow w-full max-w-full relative bg-center transition ease-in-out bg-indigo-500 hover:-translate-y-1 hover:scale-105 hover:bg-indigo-500 duration-200"
+                        style="background-image: url('/images/vignettes/algorithm.png')">
+                        <div
+                            class="w-full h-full bg-red-500/90 flex items-center justify-center flex-col justify-between">
+                            <span
+                                class="py-2 px-4 shadow-md no-underline rounded-full bg-yellow-500 text-white font-sans font-semibold text-sm border-red btn-primary flex mt-5"><img
+                                    src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
+                                    class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
+                            <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
+                                data-i18n="algorithmics-project">Vite Mon Stage</h1>
+                            <p class="text-white text-xl font-bold text-center font-light">2022</p>
+                        </div>
+                    </a>
+                    <div class="pb-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
 
 <script src="/scripts/i18next.js"></script>
+<script src="/scripts/divsnapscrolltitle.js"></script>
