@@ -21,7 +21,7 @@ i18next.init({
                 "network": "Réseaux",
                 "network-project": "Funkytown",
                 "sysadmin": "Administration système",
-                "sysadmin-project": "ABSTERGO",
+                "sysadmin-project": "Abstergo",
                 "sysprog": "Programmation système",
                 "sysprog-project": "EasySave",
                 "bigdata": "Big data",
@@ -86,10 +86,13 @@ i18next.init({
                     "paragraph-part2":"Le projet \"EasySave\" était centré sur le développement d'un logiciel de sauvegarde. L'objectif principal de ce logiciel était de sauvegarder les données de manière différentielle ou complète, en fonction des besoins de l'utilisateur. Cela a signifié que nous avons dû travailler sur une solution capable de sauvegarder uniquement les éléments qui avaient changé depuis la dernière sauvegarde complète, permettant ainsi de gagner du temps et de l'espace de stockage, ou bien de réaliser une sauvegarde intégrale, si nécessaire.",
                     "paragraph-part3":"Un défi clé a été l'exploitation du multithreading pour optimiser l'efficacité et la vitesse du logiciel. Nous avons utilisé le langage C# pour développer ces fonctionnalités multithread, afin d'assurer que notre logiciel puisse effectuer plusieurs opérations en même temps. En permettant au logiciel d'effectuer des tâches simultanément, nous avons réussi à augmenter significativement la performance et la rapidité du processus de sauvegarde.",
                 },
-                "sysprog-project-paragraph": {
-                    "paragraph-part1":"",
-                    "paragraph-part2":"",
-                    "paragraph-part3":"",
+                "bigdata-project-paragraph": {
+                    "paragraph-part1":"Lors d'un projet scolaire majeur, nous nous sommes confrontés à une problématique complexe : la gestion et l'exploitation du potentiel considérable des données. L'ampleur et la rapidité de la transformation numérique a accru la demande d'informations exploitables et intégrées issues de ces données.",
+                    "paragraph-part2":"Nous avons identifié plusieurs types de données, telles que les métriques d'affluence, les dossiers d'activités, le suivi des services, les durées des cycles et les indicateurs de performance, qui recélaient des informations précieuses mais largement sous-exploitées.",
+                    "paragraph-part3":"Pour répondre à cette situation, nous avons proposé le développement de systèmes informatiques évolutifs capables de charger, d'extraire et de traiter ces données. En misant sur le pouvoir du traitement parallèle et des ressources distribuées, nous avons cherché à effectuer des transformations et des analyses complexes pour optimiser la prise de décisions.",
+                },
+                "algorithm-project-paragraph": {
+                    "paragraph-part1":"Nous venons de commencer le projet, il n'y a donc pas grand chose à dire pour le moment. Cette page sera complétée au fur et à mesure que le projet avance.",
                 },
                 "school": "Parcours scolaire",
                 "lycee": "Lycée",
@@ -141,7 +144,7 @@ i18next.init({
                 "network": "Networks",
                 "network-project": "Funkytown",
                 "sysadmin": "System administrator",
-                "sysadmin-project": "ABSTERGO",
+                "sysadmin-project": "Abstergo",
                 "sysprog": "System programming",
                 "sysprog-project": "EasySave",
                 "bigdata": "Big data",
@@ -204,6 +207,14 @@ i18next.init({
                     "paragraph-part1":"We recently joined ProSoft, a software editing company, marking a significant milestone in our professional journey. Reporting directly to the Director of Information Systems (DSI), we had the opportunity to take on the responsibility for a significant project, \"EasySave\".",
                     "paragraph-part2":"The \"EasySave\" project focused on developing a backup software. The main goal of this software was to save data in a differential or complete manner, depending on user needs. This meant that we had to work on a solution capable of saving only the elements that had changed since the last complete backup, thus saving time and storage space, or to carry out a full backup if necessary.",
                     "paragraph-part3":"A key challenge was to use multithreading to optimize the efficiency and speed of the software. We used the C# language to develop these multithreaded features, to ensure that our software could perform multiple operations at the same time. By allowing the software to perform tasks simultaneously, we were able to significantly increase the performance and speed of the backup process.",
+                },
+                "bigdata-project-paragraph": {
+                    "paragraph-part1":"During a major school project, we faced a complex issue: the management and exploitation of the considerable potential of data. The scope and speed of digital transformation increased the demand for actionable and integrated information derived from this data.",
+                    "paragraph-part2":"We identified several types of data, such as attendance metrics, activity records, service tracking, cycle durations, and performance indicators, which harbored valuable but largely under-utilized information.",
+                    "paragraph-part3":"To address this situation, we proposed the development of scalable computing systems capable of loading, extracting, and processing this data. By leveraging the power of parallel processing and distributed resources, we sought to perform complex transformations and analyses to optimize decision-making.",
+                },
+                "algorithm-project-paragraph": {
+                    "paragraph-part1":"We just began the project, so we don't have much to say yet. This page will be filled in as the project progresses.",
                 },
                 "school": "Educational background",
                 "lycee":"High school",
@@ -279,6 +290,6 @@ document.getElementById('dropdownButton').addEventListener('click', function() {
         element.textContent = i18next.t(key);
     });
 }
-var language = localStorage.getItem('language') || 'fr';
+var language = localStorage.getItem('language') || 'us';
 document.getElementById('currentFlag').setAttribute('src', "/images/flags/" + language + ".svg")
 i18next.changeLanguage(language, updateContent);
