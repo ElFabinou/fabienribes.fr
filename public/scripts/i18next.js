@@ -4,11 +4,12 @@ i18next.init({
     resources: {
         fr: {
             translation: {
+                "resume": "Télecharger mon CV",
                 "go-back": "Retour",
                 "about-me-encart": "À propos de moi",
                 "projects-encart": "Projets",
                 "about-me": "Depuis plus jeune, je suis passionné par l'informatique. J'apprécie ce domaine qui pousse à la réflexion. C'est pour cette raison que j'ai rejoint le cursus informatique de l'école d’ingénieurs du CESI. Je suis aujourd'hui en recherche d’un stage à l'étranger, pour étendre mes connaissances et dévouvrir de nouveaux horizons.",
-                "work": "ÉTUDIANT EN INGENIERIE INFORMATIQUE",
+                "work": "ÉTUDIANT EN INGÉNIERIE INFORMATIQUE",
                 "select-language": "Langue",
                 "age": "21 ans",
                 "school-projet": "Projet scolaire",
@@ -127,6 +128,7 @@ i18next.init({
         },
         us: {
             translation: {
+                "resume": "Download my resume",
                 "go-back": "Back",
                 "about-me-encart": "About me",
                 "projects-encart": "Projects",
