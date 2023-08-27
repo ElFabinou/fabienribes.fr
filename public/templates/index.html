@@ -76,22 +76,24 @@
                 </div>
             </div>
         </div>
-        <div class="lg:snap-start h-screen grid grid-rows-3 overflow-auto" id="about-me">
+        <div class="lg:snap-start min-w-min lg:h-screen h-auto flex flex-col" id="about-me">
             <div id="about-meTitle"
                 class="hidden z-10 absolute top-0 left-0 w-full flex justify-center items-start py-3">
                 <span class="bg-white border-2 border-black text-black py-1 px-3 rounded text-xl" data-i18n="about-me-encart">À propos de moi</span>
             </div>
-            <header class="row-span-1 overflow-auto px-5 py-5">
-                <blockquote class="q-card q-card-color-1">
-                    <div class="content" data-i18n="about-me">Depuis plus jeune, je suis passionné par l'informatique.
-                        J'apprécie ce domaine qui pousse à la réflexion. C'est pour cette raison que j'ai rejoint le
-                        cursus
-                        informatique de l'école d’ingénieurs du CESI. Je suis aujourd'hui en recherche d’un stage à
-                        l'étranger, pour étendre mes connaissances et découvrir de nouveaux horizons.</div>
-                    <div class='author'>Fabien RIBES</div>
-                </blockquote>
-            </header>
-            <div class="row-span-2 grid md:grid-cols-3 gap-4 p-4">
+            <div class="flex flex-col h-auto">
+                <header class="px-5 py-5">
+                    <blockquote class="q-card q-card-color-1">
+                        <div class="content" data-i18n="about-me">Depuis plus jeune, je suis passionné par l'informatique.
+                            J'apprécie ce domaine qui pousse à la réflexion. C'est pour cette raison que j'ai rejoint le
+                            cursus
+                            informatique de l'école d’ingénieurs du CESI. Je suis aujourd'hui en recherche d’un stage à
+                            l'étranger, pour étendre mes connaissances et découvrir de nouveaux horizons.</div>
+                        <div class='author'>Fabien RIBES</div>
+                    </blockquote>
+                </header>
+            </div>
+            <div class="row-span-2 grid md:grid-cols-3 gap-4 p-4 flex flex-col h-full">
                 <!-- Card for Parcours scolaire -->
                 <div class="p-6 bg-white rounded-lg shadow md:col-span-3">
                     <div class="text-center">
@@ -111,7 +113,7 @@
                     </div>
                 </div>
                 <!-- Card for Qualités -->
-                <div class="p-6 bg-white rounded-lg shadow">
+                <div class="p-6 bg-white rounded-lg shadow flex-grow">
                     <div class="text-center">
                         <h2 class="text-2xl font-semibold text-gray-900" data-i18n="qualities.title">Qualités</h2>
                     </div>
@@ -129,7 +131,7 @@
                     </div>
                 </div>
                 <!-- Card for Atouts -->
-                <div class="p-6 bg-white rounded-lg shadow">
+                <div class="p-6 bg-white rounded-lg shadow flex-grow">
                     <div class="text-center">
                         <h2 class="text-2xl font-semibold text-gray-900" data-i18n="hobbies.title">Loisirs</h2>
                     </div>
@@ -142,7 +144,7 @@
                     </div>
                 </div>
                 <!-- Card for Langues parlées -->
-                <div class="p-6 bg-white rounded-lg shadow">
+                <div class="p-6 bg-white rounded-lg shadow flex-grow">
                     <div class="text-center">
                         <h2 class="text-2xl font-semibold text-gray-900" data-i18n="language.title">Langue</h2>
                     </div>
@@ -331,10 +333,6 @@
                                     src="/images/icons/school.svg" width="20px" style="filter: brightness(0) invert(1);"
                                     class="me-2"> <span data-i18n="school-projet">Projet Scolaire</span></span>
                             <div class="flex items-center">
-                                <span class="relative flex h-3 w-3 items-center justify-center me-1">
-                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
-                                </span>
                                 <h1 class="text-white text-3xl font-bold text-center font-black flex items-center justify-center"
                                     data-i18n="algorithmics-project">Algorithm</h1>
                             </div>
