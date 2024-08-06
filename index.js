@@ -57,6 +57,10 @@ app.get('/projects/algorithmics', (req, res) => {
     res.sendFile(path.join(__dirname+'/public/templates/project/algorithmics.html'));
 })
 
+app.get('/turku', (req, res) => {
+    res.sendFile(path.join(__dirname+'/public/templates/turku.html'));
+})
+
 app.listen(port, () => {
     console.log(`Lancement du portfolio sur le port : ${port}`)
 })
